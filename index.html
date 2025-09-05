@@ -33,11 +33,30 @@ dark:bg-neutral-800
       lg:-translate-x-1/2
       lg:top-9
       z-50
-        " aria-label="Go to homepage">
-
+     hover:opacity-75
+     transition-opacity
+      " aria-label="Go to homepage">
         <img src="./assets/logo.svg" width="200" class="w-48 md:w-64 lg:w-72 " alt="Home Smrt Logo">
-
       </a>
+
+
+      <button id="menu" class="
+        lg:hidden
+        focus:outline-none 
+        focus-visible:ring-4
+       ring-neutral-900 
+       rounded-sm ring-offset-4 
+       ring-offset-amber-400
+       text-neutral-900
+       hover:text-neutral-600
+       transition-colors
+      ">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="size-8">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+      </button>
 
     </div>
   </nav>
