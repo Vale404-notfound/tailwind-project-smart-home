@@ -521,7 +521,9 @@ dark:bg-neutral-800
         <h2 id="contact" class="text-3xl font-bold">Let's Connect!</h2>
 
         <div class="relative">
-          <input type="text" id="name" class="form-input
+          <input type="text" id="name" class="
+          peer
+          form-input
           w-full
           border-4
           border-amber-400
@@ -533,11 +535,27 @@ dark:bg-neutral-800
           focus:outline-none
           dark:bg-amber-400
           dark:text-neutral-900
-          ">
+          placeholder-transparent
+          " placeholder="Your Name">
 
           <label for="name" class="
-          text-neutral-900
-          "></label>
+          text-neutral-500
+          text-sm
+          font-bold
+          uppercase
+          absolute
+          -top-4
+          left-2
+          -translate-y-1/2
+          transition-all
+          peer-placeholder-shown:left-4
+          peer-placeholder-shown:top-1/2
+          peer-placeholder-shown:text-neutral-900
+          peer-focus:-top-4
+          peer-focus:left-2
+          peer-focus:text-neutral-600
+          dark:peer-focus:text-neutral-300
+          ">Your Name</label>
         </div>
 
       </form>
